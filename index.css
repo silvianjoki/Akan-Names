@@ -9,15 +9,3 @@ body{
 /* end of format *
 
 /* formatting heading portion */
-head{
-    text-align: center;
-    font-size: 37px;
-    position:relative;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image: url(/Images/background.jpg);
-}
-
-.p-3{
-    padding-left: 10ch;
-    color: black;
-}
