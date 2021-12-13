@@ -36,4 +36,19 @@ function submitForm(event) {
         "Kwame",
     ];
 
+    var dateObject = new Date(datestring);
+    var day = dateObject.getDay(0);
+
+    if (day != null && gender != null ) {
+        if (gender === "female") {
+            akanName = femaleNames [day];
+        }
+        else {
+            akanName = maleNames [day];
+        }
+
+
+    }
+    document.getElementById("akanName").innerHTML = akanName;
+
 }
