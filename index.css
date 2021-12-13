@@ -5,7 +5,22 @@ body{
     background-repeat: no-repeat;
     background-size: auto;
     text-align: center;
+    font-size: 17px;
 }
 /* end of format *
 
 /* formatting heading portion */
+
+h1,h3{
+    color: white;
+    font-weight: bolder;
+    word-spacing: 10px;
+    position:relative;
+    font-weight: 500;
+    margin-top: 0ch;
+    padding top: 20px;
+}
+
+p{
+    color: black;
+}
