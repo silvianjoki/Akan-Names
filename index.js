@@ -3,12 +3,31 @@ var CC, YY, MM, DD, d, dayValue;
     var femaleNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
     var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 
-// function validate () {
-//     var genders = document.getElementsByName ("gender");
-//     if(document.myForm.year.value == "" || document.myForm.year.value.length !=4 ||document.myForm.year.value >2070 ||document.myForm.year.value <=1920) {
-//         alert
-//     }
-// }
+    function monthValidator () {
+        if (birthMonth < 1 || birthMonth > 12) {
+          return false;
+        } else {
+          return true;
+        }
+    }
+    
+    function dayValidator () {
+        if (birthMonth === 2 && Number(birthYear)%4 === 0) {
+        if (dayOfBirth > 28 || birthDay < 1) {
+            return false;
+        } else if (birthMonth === 2 && birthDay > 29) {
+            return false;
+        } else if (birthMonth === 2 && birthDay < 1) {
+            return false;
+        } else {
+            return true;
+        }
+        } else if (birthDay < 1 || birthDay > 31){
+            return false;
+        } else {
+            return true;
+        }
+    }
 
 function calculateDayValue(){
     year = document.getElementById("year").value;
