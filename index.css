@@ -15,6 +15,7 @@ head{
     font-size: 37px;
     position:relative;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(/Images/background.jpg);
 }
 
 .jumbotron{
