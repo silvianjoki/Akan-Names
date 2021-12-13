@@ -7,15 +7,11 @@
     <title>Akan Name Generator</title>
     
     <!-- adding bootstrap -->
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-<!-- linking js -->
-<link rel="stylesheet" href="index.js"
-<!-- adding css -->
-<link rel="stylesheet" href="index.css">
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- linking js -->
+    <link rel="stylesheet" href="index.js">
+    <!-- adding css -->
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -33,6 +29,14 @@
             <p>According to Ghanian culture, children are named based on the day name (which corresponds to the day in the week they are born’. By generating your Akan name, you will find out the corresponding day of the week you were born. </p>
 
             <p>To find your Akan name, do fill in the details below:</p>
+            <form class="thisform" onsubmit="return getAkanName()">
+                <label for="Birth Year">
+                    Year:
+                    <input id="input-year" type="number" name="birth-year" placeholder="YYYY" value="" required>
+                </label>
+            
+            
+            </form>
         </div>
         
 
