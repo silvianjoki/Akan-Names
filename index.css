@@ -18,9 +18,19 @@ h1,h3{
     position:relative;
     font-weight: 500;
     margin-top: 0ch;
-    padding top: 20px;
+    
 }
 
 p{
     color: black;
+}
+.Content{
+    background-color:teal;    
+    background-blend-mode: overlay;
+    margin-left: 20ch;
+    margin-right: 20ch;
+    margin-top: 2ch;
+    margin-bottom: 4ach;
+
+    
 }
