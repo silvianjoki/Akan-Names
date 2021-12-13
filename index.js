@@ -3,9 +3,17 @@ var CC, YY, MM, DD, d, dayValue;
     var femaleNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
     var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 
+// function validate () {
+//     var genders = document.getElementsByName ("gender");
+//     if(document.myForm.year.value == "" || document.myForm.year.value.length !=4 ||document.myForm.year.value >2070 ||document.myForm.year.value <=1920) {
+//         alert
+//     }
+// }
+
 function calculateDayValue(){
     year = document.getElementById("year").value;
-    YY= parseInt (year.substring (2,4));
+    CC = parseInt (year.substring (0,2));
+    YY = parseInt (year.substring (2,4));
     MM = parseInt (document.getElementById ("birth-month").value);
     DD = parseInt (document.getElementById ("birth-day"). value); 
     d = ( (CC/4) -2*CC+1) + ( (5*YY/4)) + ((26*(MM+1)/10) + DD)%7;
