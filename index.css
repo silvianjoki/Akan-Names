@@ -1,9 +1,8 @@
 /* formatting the body */
 .heading{
-    background-image: url('../Images/naming.jpg');
-    position: absolute;
-    position: fixed;
+    background-image: url(Images/unsplash.jpg)
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    background-blend-mode:overlay;
 }
-/* end of format */
+/* end of format *
