@@ -1,7 +1,9 @@
-body{
-    background-image: url(Images/naming.jpg);
+/* formatting the body */
+.heading{
+    background-image: url();
     position: absolute;
     position: fixed;
     background-repeat: no-repeat;
     background-size: auto;
 }
+/* end of format */
