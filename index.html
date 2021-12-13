@@ -15,11 +15,14 @@
 </head>
 
 <body>
-    <!-- heading -->
-    <div class="jumbotron">
-        <h1>Akan Naming Generator</h1>
-        <h3>Hello and Welcome</h3>
+    <!-- heading -->)
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Akan Naming Generator</h1>
+            <h3>Hello and Welcome</h3>
+        </div>
     </div>
+
     <!-- end of heading -->
 
     <!-- <beging of content section -->
@@ -42,23 +45,27 @@
                     Day:
                     <input id="input-day" type="number" name="birth-day" placeholder="DD" value="" required>
                 </label>
-                <br>
+                
                 <!-- spacing -->
-                </br>
+                <br></br>
 
-                <br>
-                <label>                    
+                <br>                                          
                     <label for="Gender">
                         <p>Choose your gender here:</p>
                         Female
-                        <input id="input-female" type="checkbox" name="gender" value="female" required>
+                        <input id="input-female" type="checkbox" namespacing="gender" value="female" required>
                         Male
                         <input id="input-male" type="checkbox" name="gender" value="male" required>
                     </label>
                 </br>
-                </label>
-            
+
+            <!-- spacing -->
+                <br></br>
+                <button type="submit">Check name</button>
+                <br></br>
             </form>
+
+            <h4>Your Akan Name is <span id="akanName"></span></h4>
         </div>
         
 
