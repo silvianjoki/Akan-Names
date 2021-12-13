@@ -27,10 +27,13 @@ p{
 .Content{
     background-color:teal;    
     background-blend-mode: overlay;
-    margin-left: 20ch;
-    margin-right: 20ch;
+    margin-left: 23ch;
+    margin-right: 23ch;
     margin-top: 2ch;
-    margin-bottom: 4ach;
+    margin-bottom: 10ch;
+    position: center;
+    position:fixed;
+    border-radius: 3ch;
 
     
 }
