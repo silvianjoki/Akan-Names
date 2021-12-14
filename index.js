@@ -1,33 +1,35 @@
-var CC, YY, MM, DD, d, dayValue;
+
     var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     var femaleNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
     var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 
-    function monthValidator () {
-        if (birthMonth < 1 || birthMonth > 12) {
-          return false;
-        } else {
-          return true;
-        }
-    }
+    // function monthValidator () {
+    //     if (birthMonth < 1 || birthMonth > 12) {
+    //       return false;
+    //     } else {
+    //       return true;
+    //     }
+    // }
     
-    function dayValidator () {
-        if (birthMonth === 2 && Number(birthYear)%4 === 0) {
-        if (dayOfBirth > 28 || birthDay < 1) {
-            return false;
-        } else if (birthMonth === 2 && birthDay > 29) {
-            return false;
-        } else if (birthMonth === 2 && birthDay < 1) {
-            return false;
-        } else {
-            return true;
-        }
-        } else if (birthDay < 1 || birthDay > 31){
-            return false;
-        } else {
-            return true;
-        }
-    }
+    // function dayValidator () {
+    //     if (birthMonth === 2 && Nufinding the akan namember(birthYear)%4 === 0) {
+    //     if (dayOfBirth > 28 || birthDay < 1) {
+    //         return false;
+    //     } else if (birthMonth === 2 && birthDay > 29) {
+    //         return false;
+    //     } else if (birthMonth === 2 && birthDay < 1) {
+    //         return false;
+    //     } else {
+    //         return true;
+    //     }
+    //     } else if (birthDay < 1 || birthDay > 31){
+    //         return false;
+    //     } else {
+    //         return true;
+    //     }
+    // }
+
+    // acquiring the day function
 
 function calculateDayValue(){
     year = document.getElementById("year").value;
@@ -40,6 +42,7 @@ function calculateDayValue(){
     return (Math.floor(d));
 }
 
+// defining the gender
 function getGender (){
     var genders = document.getElementsByName ("gender")
     if (genders[0].checked == true){
@@ -103,6 +106,8 @@ switch(gender){
     default:
     
     }
+
+    // finding the akan name
 
 function nameFind () {
     dayValue = calculateDayValue();
