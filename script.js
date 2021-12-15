@@ -13,7 +13,7 @@ function monthValidator () {
 }
 function dateValidator () {
     if (month === 2 && Number (year)%4 ===0) {
-        if date>28 || date<1){
+        if (date <1 || date>28){
             return false;
         }else if (month === 2 && date > 29) {
             return false;
@@ -28,6 +28,7 @@ function dateValidator () {
         return true;
     }
 }
+
 
 // calculating the day
 function calculateDayValue(){
