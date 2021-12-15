@@ -36,19 +36,19 @@ p{
     border-radius: 3ch;
 }
 /* styling the boxes */
-#input-year{
+#year{
     border-radius: 5px;
     width: 70px;
     height: 20px;
     position: center;
 }
-#input-month{
+#month{
     border-radius: 5px;
     width: 60px;
     height: 20px;
     position: center;
 }
-#input-day{
+#date{
     border-radius: 5px;
     width: 60px;
     height: 20px;
