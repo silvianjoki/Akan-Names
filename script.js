@@ -2,40 +2,13 @@
 // on click = "function to execute()"
 //     console.log(birthday);
 
-obect.onclick = function() {myScirpt}
+object.onclick = function() {myScirpt}
 
 
-    var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    var femaleNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-    var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+    var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    var femaleNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
+    var maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'];
 
-    // function monthValidator () {
-    //     if (birthMonth < 1 || birthMonth > 12) {
-    //       return false;
-    //     } else {
-    //       return true;
-    //     }
-    // }
-    
-    // function dayValidator () {
-    //     if (birthMonth === 2 && Nufinding the akan namember(birthYear)%4 === 0) {
-    //     if (dayOfBirth > 28 || birthDay < 1) {
-    //         return false;
-    //     } else if (birthMonth === 2 && birthDay > 29) {
-    //         return false;
-    //     } else if (birthMonth === 2 && birthDay < 1) {
-    //         return false;
-    //     } else {
-    //         return true;
-    //     }
-    //     } else if (birthDay < 1 || birthDay > 31){
-    //         return false;
-    //     } else {
-    //         return true;
-    //     }
-    // }
-
-    // acquiring the day function
 
 function calculateDayValue(){
     year = document.getElementById("year").value;
@@ -64,22 +37,22 @@ function getGender (){
 switch(gender){
     case "female":
     if (dayValue === 1){
-        alert("Born on " + dayNames[0] + " so your Akan name is " +femaleNames[0]+"!");
+        alert('Born on' + dayNames[0] + 'so your Akan name is' +femaleNames[0]+"!");
     }
     else if (dayValue == 2) {
-        alert("Born on " + dayNames[1] + " so your Akan name is " +femaleNames[1]+"!");
+        alert('Born on' + dayNames[1] + 'so your Akan name is' +femaleNames[1]+"!");
     }
     else if (dayValue == 3) {
-        alert("Born on " + dayNames[2] + " so your Akan name is " +femaleNames[2]+"!");
+        alert('Born on' + dayNames[2] + 'so your Akan name is' +femaleNames[2]+"!");
     }
     else if (dayValue == 4) {
-        alert("Born on " + dayNames[3] + " so your Akan name is " +femaleNames[3]+"!");
+        alert('Born on' + dayNames[3] + 'so your Akan name is' +femaleNames[3]+"!");
     }
     else if (dayValue == 5) {
-        alert("Born on " + dayNames[4] + " so your Akan name is " +femaleNames[4]+"!");
+        alert('Born on' + dayNames[4] + 'so your Akan name is' +femaleNames[4]+"!");
     }
     else if (dayValue == 6) {
-        alert("Born on " + dayNames[5] + " so your Akan name is " +femaleNames[5]+"!");
+        alert('Born on' + dayNames[5] + 'so your Akan name is' +femaleNames[5]+"!");
     }
     else if (dayValue == 0) {
         alert("Born on " + dayNames[6] + " so your Akan name is " +femaleNames[6]+"!");
