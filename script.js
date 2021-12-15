@@ -28,6 +28,9 @@ function dateValidator () {
         return true;
     }
 }
+// validator variables
+let monthValid= monthValidator ();
+let dateValid = dateValidator ();
 
 
 // calculating the day
