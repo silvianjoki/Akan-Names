@@ -3,6 +3,32 @@ var dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Sat
 var femaleNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
 var maleNames = ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'];
 
+// validating the entry
+function monthValidator () {
+    if (month<1 || month>12) {
+        return false;
+    }else {
+        return true;
+    }
+}
+function dateValidator () {
+    if (month === 2 && Number (year)%4 ===0) {
+        if date>28 || date<1){
+            return false;
+        }else if (month === 2 && date > 29) {
+            return false;
+        }else if (month === 2 && date < 1) {
+            return false;
+        }else {
+            return true;
+        }
+    }else if (date<1 || date>31){
+        return false;
+    }else {
+        return true;
+    }
+}
+
 // calculating the day
 function calculateDayValue(){
     year = document.getElementById("year").value;
@@ -43,14 +69,9 @@ function getGender (dayValue){
     }
     return [akanName, day];
 
-    // validating the entry
-    if(date<0 || date >31)
-        alert("input valid date")
-    else if (month<0 || month>12)
-        alert ("input valid month")
-    if(year<0 || year>2022)
-        alert("input valid year")
-        }
+    
+    }
+
     // finding akanName
     function getAkanName () {
         var dayValue = calculateDayValue();
