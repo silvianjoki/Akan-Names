@@ -42,6 +42,14 @@ function getGender (dayValue){
             break;
     }
     return [akanName, day];
+
+    // validating the entry
+    if(date<0 || date >31)
+        alert("input valid date")
+    else if (month<0 || month>12)
+        alert ("input valid month")
+    if(year<0 || year>2022)
+        alert("input valid year")
         }
     // finding akanName
     function getAkanName () {
@@ -50,5 +58,6 @@ function getGender (dayValue){
         var name_day = getGender(dayValue);
         alert("You were born on " + name_day[1] + " and Your akan name is " + name_day[0]+"!");
         span = document.getElementById ("akanName");
-        span.texContent = name_day [0];
+        span.textContent = name_day [0];
     }
+    
