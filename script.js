@@ -37,49 +37,49 @@ function getGender (){
 switch(gender){
     case "female":
     if (dayValue === 1){
-        alert('Born on' + dayNames[0] + 'so your Akan name is' +femaleNames[0]+"!");
+        alert('Born on' + dayNames[0] + ' so your Akan name is ' +femaleNames[0]+"!");
     }
     else if (dayValue == 2) {
-        alert('Born on' + dayNames[1] + 'so your Akan name is' +femaleNames[1]+"!");
+        alert('Born on' + dayNames[1] + ' so your Akan name is ' +femaleNames[1]+"!");
     }
     else if (dayValue == 3) {
-        alert('Born on' + dayNames[2] + 'so your Akan name is' +femaleNames[2]+"!");
+        alert('Born on' + dayNames[2] + ' so your Akan name is ' +femaleNames[2]+"!");
     }
     else if (dayValue == 4) {
-        alert('Born on' + dayNames[3] + 'so your Akan name is' +femaleNames[3]+"!");
+        alert('Born on' + dayNames[3] + ' so your Akan name is ' +femaleNames[3]+"!");
     }
     else if (dayValue == 5) {
-        alert('Born on' + dayNames[4] + 'so your Akan name is' +femaleNames[4]+"!");
+        alert('Born on' + dayNames[4] + ' so your Akan name is ' +femaleNames[4]+"!");
     }
     else if (dayValue == 6) {
-        alert('Born on' + dayNames[5] + 'so your Akan name is' +femaleNames[5]+"!");
+        alert('Born on' + dayNames[5] + ' so your Akan name is ' +femaleNames[5]+"!");
     }
     else if (dayValue == 0) {
-        alert("Born on " + dayNames[6] + " so your Akan name is " +femaleNames[6]+"!");
+        alert("Born on " + dayNames[6] + ' so your Akan name is ' +femaleNames[6]+"!");
     }
     
     break;
     case "male":
     if (dayValue == 1){
-        alert("You were born on " +dayNames[0] + " and Your akan name is " +maleNames[0]+"!");
+        alert(' Born on '  +dayNames[0] + ' so Your akan name is ' +maleNames[0]+"!");
     }
     else if (dayValue == 2){
-        alert("Born on " + dayNames[1] + " so your Akan name is " +maleNames[1]+"!");
+        alert(' Born on ' + dayNames[1] + ' so your Akan name is ' +maleNames[1]+"!");
     }
     else if (dayValue == 3){
-        alert("Born on " + dayNames[2] + " so your Akan name is " +maleNames[2]+"!");
+        alert(' Born on ' + dayNames[2] + ' so your Akan name is ' +maleNames[2]+"!");
     }
     else if (dayValue == 4){
-        alert("Born on " + dayNames[3] + " so your Akan name is " +maleNames[3]+"!");
+        alert(' Born on ' + dayNames[3] + ' so your Akan name is ' +maleNames[3]+"!");
     }
     else if (dayValue == 5){
-        alert("Born on " + dayNames[4] + " so your Akan name is " +maleNames[4]+"!");
+        alert(' Born on ' + dayNames[4] + ' so your Akan name is ' +maleNames[4]+"!");
     }
     else if (dayValue == 6){
-        alert("Born on " + dayNames[5] + " so your Akan name is " +maleNames[5]+"!");
+        alert(' Born on ' + dayNames[5] + ' so your Akan name is ' +maleNames[5]+"!");
     }
     else if (dayValue == 0){
-        alert("Born on " + dayNames[6] + " so your Akan name is " +maleNames[6]+"!");
+        alert(' Born on ' + dayNames[6] + ' so your Akan name is ' +maleNames[6]+"!");
     }
     break
     default:
